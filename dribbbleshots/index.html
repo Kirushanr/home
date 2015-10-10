@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+ 
+     
+        <link rel="stylesheet" href="css/bootflat.min.css">
+        <link href="css/site.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link href="css/audioplayer.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+            <style>
+                body{
+                    background: #1C1C29;
+                }
+                .song-description{
+                    color:white;
+                }
+                .img-responsive{
+   
+                         border-style: solid;
+                         color:#4F4760;
+    
+                }
+                #single-song-bar {
+  height: 60px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  background: rgb(51, 51, 51);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#single-song-bar .cd-container {
+  height: 100%;
+  position: relative;
+  z-index: 50;
+}
+@media only screen and (min-width: 1030px) {
+  #single-song-bar {
+    height: 75px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  #single-song-bar {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+  }
+  #single-song-bar{
+    margin-top:40px;
+  }
+}
+
+@media only screen and (min-width:320px){
+   #single-song-bar {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+  }
+  #single-song-bar{
+    margin-top:40px;
+  }
+}
+
+.cd-container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.audioplayer{
+    margin-top:20px;
+}
+            </style>
+    <script>
+			/*
+				VIEWPORT BUG FIX
+				iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+			*/
+			(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+		</script>
+    </head>
+        
+    <body>
+     <nav class="navbar navbar-inverse navbar-fixed-top custom" role="navigation">
+      <div class="container">
+          <div class="navbar-brand">MUSO</div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+       
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-left" role="form">
+           <div class="inner-addon left-addon">
+                     <i class="glyphicon glyphicon-search"></i>
+                     <input type="text" class="form-control search" />
+            </div>
+          </form>
+             <div class="navbar navbar-right">
+                 <ul class="nav navbar-nav">
+                     <div class="profile-image">
+                     <a href="" class="profile-logo"><img src="https://s-media-cache-ak0.pinimg.com/30x30/8a/0e/5a/8a0e5af4b0e39af40ac9ade54ee1fc69.jpg" class="img-circle special-img">Justin Timberlake</a>
+                     </div>
+                 </ul>
+            </div>
+        </div>
+    
+      </div>
+    </nav>
+        <div class="jumbotron">
+            <div class="tint"></div>
+      <div class="container">
+        
+        <p class="claim"></p>
+        <span class="heart glyphicon glyphicon-heart-empty"><span class="likes">134,232</span></span>
+      </div>
+    </div>
+        <div class="main-performance">
+            <div class="performance-wrapper">
+                <div class="container">
+                    <div class="row">
+                         <h4 class="performance-heading">FEATURED</h4>
+                    </div>
+                           <div class="mymusic">
+                    <div class="row">
+                      
+                        <div class="tile">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 music-content">
+                                <div class="hover-content">
+                                <img src="img/singer.jpg" class="img-responsive" style="max-height:256px">
+                                      <div class="overlay">
+                                          <span class="glyphicon glyphicon-play-circle" id="play"></span>
+                                        </div>  
+                                
+                                </div>
+                                <div class="song-description">
+                                     <p>Singer : Carolina</p>
+                                        <p>Track name : Carloina</p>
+                                        <p class="likes-heart"><span class="glyphicon glyphicon-heart-empty"></span><span> 7000</span></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 music-content">
+                                <div class="hover-content">
+                                <img src="https://whoisscout.files.wordpress.com/2010/04/00-david_guetta_and_chris_willis_feat-_fergie_and_lmfao-gettin_over_you_5099963351859-web-2010-cover.jpg" class="img-responsive">
+                                    
+                                      <div class="overlay">
+                                         <span class="glyphicon glyphicon-play-circle"></span>
+                              </div>
+                                </div>
+                                <div class="song-description">
+                                     <p>Singer : David Guetta</p>
+                                        <p>Track name : David Guetta</p>
+                                        <p class="likes-heart"><span class="glyphicon glyphicon-heart-empty" id="play"></span><span> 3500</span></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                     
+                        <div class="tile">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 music-content">
+                             <div class="hover-content">
+                                <img src="http://2.bp.blogspot.com/_-aGDXVBwaW4/TCiCeabixaI/AAAAAAAAB9k/YhVyKZxwxHc/s320/20th-century-blues.jpg" class="img-responsive">
+                               <div class="overlay">
+                                         <span class="glyphicon glyphicon-play-circle"></span>
+                              </div>
+                             </div>
+                                
+                                <div class="song-description">
+                                     <p>Bio-Shock-OST</p>
+                                        <p>Rock-Star Games</p>
+                                        <p class="likes-heart"><span class="glyphicon glyphicon-heart-empty"></span><span> 1200</span></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 music-content">
+                                <div class="hover-content">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/AKB48_-_UZA_(Type-A,_Regular_Edition,_KIZM-173)_cover.jpg" class="img-responsive">
+                                      <div class="overlay">
+                                         <span class="glyphicon glyphicon-play-circle"></span>
+                              </div>
+                                </div>
+                                <div class="song-description">
+                                     <p>Uza</p>
+                                        <p>Uza Music</p>
+                                        <p class="likes-heart"><span class="glyphicon glyphicon-heart-empty"></span><span> 500</span></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 music-content">
+                              
+                              <div class="hover-content">          
+                                          <img src="http://kylemayne.com/wp-content/uploads/2007/08/windowslivewriternewspringsteencoverartwork-8a4n555207495-119731-5879-thumb12.jpg" class="img-responsive">
+                               
+                              <div class="overlay">
+                                         <span class="glyphicon glyphicon-play-circle"></span>
+                              </div>
+                              </div>
+                                <div class="song-description">
+                                     <p>Magic</p>
+                                        <p>Bruce Springston</p>
+                                        <p class="likes-heart"><span class="glyphicon glyphicon-heart-empty"></span><span> 4000</span> </p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>    
+        </div>
+         
+        <section id="single-song-bar" hidden>
+			<div class="cd-container">
+			
+                   <audio preload="false" controls id="audio-player">
+				<source src="https://rhythmsapp-1.appspot.com/serve?blob-key-music=AMIfv96l-t1vZt5ZPTSHc3ydRQbDobCUIBKhLkr7v_1_PqaDvO7RzAS-p1EN_X09gzw_NRVE_-wJDvNlPcPcGoUR-nGzrGc21X7Jveeg66tWMrS0Y7oNqIV2ALSCxDeOH5Z3iB0Z6Q98KXRljEsmYKAhnGRhZb7oBa6QdSr8agLawR77POLFqU8">
+			</audio>
+				
+			</div> <!-- cd-container -->
+		</section> 
+           
+       
+        
+        
+    <script src="js/vendor/jquery-1.11.2.js" type="text/javascript"></script>
+       <script src="js/audioplayer.js" type="text/javascript"></script>
+        <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+      
+    <script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/main.js"></script>
+     
+     
+        <script>
+            
+            
+            $(document).on('click','#play',function(){
+                
+                $value=$(this).attr('class');
+                if($value==="glyphicon glyphicon-play-circle")
+                {
+                    $(this).attr('class',"glyphicon glyphicon-pause");
+                    
+                    $("#single-song-bar").show();
+                    $("#single-song-bar").attr('class','animated slideInUp')
+                    $('.audioplayer-playpause a').find('a').html("Play");
+                    thePlayer.addClass('audioplayer-playing')
+                    theAudio.play();
+                   
+                }else if($value==="glyphicon glyphicon-pause"){
+                     $(this).attr('class',"glyphicon glyphicon-play-circle");
+                     $("#single-song-bar").attr('class','animated slideOutDown');
+                     //$("#single-song-bar").hide();
+                     
+                     thePlayer.remove('audioplayer-playing')
+                     theAudio.pause();
+                }
+            });   
+            
+          
+        </script>
+    </body>
+</html>
