@@ -22,15 +22,18 @@ if($status_code==200){
 		$key=trim($directive);
 		$vals=trim($value);
 		$data[$key]=trim($vals);
+		/*
+		Un comment this code to view the response in HTML tag
 		echo "<h3>".$key."</h3>"."<br>";
-		echo "<p>".$vals."</p>"."<br>"."<br>";
+		echo "<p>".$vals."</p>"."<br>"."<br>";*/
 		return $data;
 
 
 	
     
 	});
-
+	//This returns json response
+	echo json_encode($content);
 	
 	
 }
