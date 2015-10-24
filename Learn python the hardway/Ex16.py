@@ -1,6 +1,6 @@
 from sys import argv
 
-script,filename= argv
+script , filename = argv
 
 print "We're going to erase the %r" % filename
 print "If you don't won't that hit CTRL+C"
@@ -8,7 +8,7 @@ print "If you do want that hit return"
 
 raw_input("?")
 print "Opening the file"
-target=open(file,"w")
+target=open(filename,"w")
 
 print "Truncating the file Goodbye!!!"
 
@@ -24,10 +24,12 @@ line3=raw_input("Line 3: ")
 
 print "I'm going to print the lines";
 
-target.write(line1);
-target.write(line2);
-target.write(line3);
-target.write(line4);
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
 
 
-target.read();
+target.close();
