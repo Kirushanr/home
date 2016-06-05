@@ -9,7 +9,7 @@ def print_all(f):
 #used when operating over a open file 
 #takes two parameters offset and  from_what
 def rewind(f):
-	f.seek(0)
+	f.seek(0);
 
 	
 def print_a_line(line_count,f):

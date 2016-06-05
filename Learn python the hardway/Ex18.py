@@ -1,7 +1,8 @@
 def print_two(*args):
 	arg1,arg2 = args
 	print "arg1: %r, arg2:%r" % (arg1,arg2)
-	
+#def stands for define
+#define a function called prin_two_again	
 def print_two_again(arg1,arg2):
 	print "arg1: %r, arg2: %r" % (arg1,arg2)
 

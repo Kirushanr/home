@@ -3,6 +3,7 @@ from sys import argv
 
 
 #argv is the argument variable
+#unpacking argv and assigning the values to four variables
 script,first,second,third=argv
 
 print "The script is called:",script

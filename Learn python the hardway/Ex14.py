@@ -1,5 +1,7 @@
 from sys import argv
 
+
+#unpackign argv 
 script,username=argv
 prompt="> "              
 print "Hi %s I'm the %s script." % (username,script)

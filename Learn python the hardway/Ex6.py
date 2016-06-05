@@ -20,4 +20,5 @@ print joke_evaluation % hilarious
 w="This is the left side of..."
 e ="a string with a right side."
 
+#doing a calculation
 print w+e

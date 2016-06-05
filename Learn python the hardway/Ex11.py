@@ -1,3 +1,5 @@
+
+#raw_input how to recieve an input from the user
 print "How old are you?"
 age =raw_input()
 print "How tall are you?"
