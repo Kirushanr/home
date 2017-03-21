@@ -37,7 +37,7 @@ print "We'd have the %d beans, %d jars and %d crates." %(beans,jars,crates)
 start_point=start_point/10
 
 print "We can also do this way:"
-print "We'd have %d beans %d jars %d crates" % dr(start_point);
+print "We'd have %d beans %d jars %d crates" % secret_forumla(start_point);
 
 
 

@@ -6,7 +6,7 @@ def gold_rooms():
 	
 	next = raw_input(">")
 	if  "0" in next or "1" in next :
-		how_much = int(next)             #Casting string to integer
+		how_much = int(next)
 	else:
 		dead("Man, learn to type a number.")
 	
