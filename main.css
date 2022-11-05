@@ -32,14 +32,14 @@ body {
 }
 
 .page-header {
-  font-size: 20px;
+  font-size: 10px;
   text-align: center;
   display: flex;
   color: white;
   position: fixed;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 90%;
+  margin-bottom: 100%;
 }
 
 /*________________________________________________ */
